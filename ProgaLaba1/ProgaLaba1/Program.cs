@@ -30,7 +30,7 @@ class Program
             {
                 throw new Exception("You input not correct argument");
             }
-            Console.WriteLine("Do you want to end?(y/n)");
+            Console.WriteLine("\n" + "Do you want to end?(y/n)");
             if(Console.ReadLine() == "y")
             {
                 break;
@@ -119,7 +119,7 @@ class Program
         var newlist2 = listout.OrderByDescending(i => i);
         foreach (int i in newlist2)
         {
-            Console.WriteLine(i + "\t");
+            Console.Write(i + "\t");
         }
     }
 }
