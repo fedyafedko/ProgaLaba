@@ -105,13 +105,7 @@ class Program
         }
         Console.WriteLine("\n" + "List output:");
         var newlist = list.OrderBy(i => i);
-        foreach (int i in newlist)
-        {
-            if(i % 2 == 0 && i > 0)
-            {
-                listout.Add(i);
-            }
-        }
+        listout = list.Where(s=> s%2==0&&s>0).ToList(); 
         if (listout.Count == 0) 
         {
             Console.WriteLine("List do not have pairs of non-negative numbers");
